@@ -1,0 +1,607 @@
+{
+    "rooms": [
+        {
+            "id": "start",
+            "name": "Firstia",
+            "description": "Town of Origins",
+            "exits": {
+                "north": "rampant_forest"
+            }
+        },
+        {
+            "id": "rampant_forest",
+            "name": "The Rampant Forest",
+            "description": "The Rampant Forest is a large forest between Firstia and Secondil",
+            "exits": {
+                "south": "start",
+				"north": "secondil"
+            }
+        },
+        {
+            "id": "secondil",
+            "name": "Secondil",
+            "description": "Outpost for Marsh Journeys",
+            "exits": {
+                "south": "rampant_forest",
+                "north": "diremarsh_waste"
+            }
+        },
+        {
+            "id": "diremarsh_waste",
+            "name": "Diremarsh Waste",
+            "description": "Diremarsh Waste is a swamp-laden wasteland that players must traverse from Secondile to Thirdrema.",
+            "exits": {
+                "south": "secondil",
+                "north": "thirdrema"
+            }
+        },
+        {
+            "id": "thirdrema",
+            "name": "Thirdrema",
+            "description": "The big city",
+            "exits": {
+                "south": "diremarsh_waste",
+				"west": "prismatic_forest_grotto",
+				"north": "lake_of_fortunes",
+				"east": "iron_ruin_divinity"
+			}
+		},
+		{
+            "id": "prismatic_forest_grotto",
+            "name": "Prismatic Forest Grotto",
+            "description": "Prismatic Forest Grotto is a lush forest within a large cave system that leads from Thirdrema to Fourfolkshire.",
+            "exits": {
+                "east": "thirdrema",
+				"west": "fourfolkshire"
+            }
+        },
+        {
+            "id": "fourfolkshire",
+            "name": "Fourfolkshire",
+            "description": "The 4th city",
+            "exits": {
+                "east": "prismatic_forest_grotto",
+                "north": "canyon_ancient_souls"
+            }
+        },
+        {
+            "id": "lake_of_fortunes",
+            "name": "Deathcrater Lake of Fortunes",
+            "description": "Deathcrater Lake of Fortunes is an extinct volcano connecting Thirdrema to Fivelle",
+            "exits": {
+                "south": "thirdrema",
+				"north": "fivelle"
+            }
+        },
+        {
+            "id": "fivelle",
+            "name": "Fivelle",
+            "description": "The 5th city",
+            "exits": {
+                "south": "lake_of_fortunes",
+                "west": "ruins_past_glories",
+				"east": "barren_darkruin"
+            }
+        },
+        {
+            "id": "iron_ruin_divinity",
+            "name": "The Iron Ruin of the Divinity",
+            "description": "The Iron Ruin of the Divinity is a set of ruins between Thirdrema and Sixenveldt",
+            "exits": {
+                "west": "thirdrema",
+				"east": "sixenveldt"
+            }
+        },
+        {
+            "id": "sixenveldt",
+            "name": "Sixenveldt",
+            "description": "The 6th city",
+            "exits": {
+                "west": "iron_ruin_divinity",
+				"north": "magnanimous_sanctuary"
+            }
+        },
+        {
+            "id": "canyon_ancient_souls",
+            "name": "Canyon of the Ancient Souls",
+            "description": "Canyon of the Ancient Souls is a rocky canyon connecting Fourfolkshire to Eighthold.",
+            "exits": {
+                "south": "fourfolkshire",
+				"north": "eighthold"
+            }
+        },
+        {
+            "id": "eighthold",
+            "name": "eighthold",
+            "description": "The 8th city",
+            "exits": {
+                "south": "canyon_ancient_souls",
+				"east": "ruins_past_glories"
+            }
+        },
+		{
+            "id": "ruins_past_glories",
+            "name": "Ruins of the past glories",
+            "description": "The Ruins of Past Glories are a set of ruins between Eighthold and Fivelle.",
+            "exits": {
+                "west": "eighthold",
+				"east": "fivelle"
+            }
+        },
+        {
+            "id": "barren_darkruin",
+            "name": "Barren Darkruin",
+            "description": "Barren Darkruin is an ancient battlefield that sits between Fivelle and Neenesshill",
+            "exits": {
+                "west": "fivelle",
+				"east": "neenesshill"
+            }
+        },
+        {
+            "id": "neenesshill",
+            "name": "Neenesshill",
+            "description": "The 9th city",
+            "exits": {
+                "west": "barren_darkruin",
+				"south": "magnanimous_sanctuary"
+            }
+        },
+		{
+            "id": "magnanimous_sanctuary",
+            "name": "Magnanimous Sanctuary",
+            "description": "Magnanimous Sanctuary is the mountainous area between Neenesshill and Sixenveldt.",
+            "exits": {
+                "south": "sixenveldt",
+				"north": "neenesshill"
+            }
+        }
+    ],
+
+
+
+    "items": [
+        {
+            "id": "coin",
+            "name": "Coin",
+            "description": "A gold coin"
+        },
+		{
+			"id": "rusty_sword",
+			"name": "Rusty sword",
+			"description": "A sword rustied by time",
+			"data": {
+				"damage": 25
+			}
+		},
+		{
+			"id": "rare_stone",
+			"name": "Rare Stone",
+			"description": "A unique stone found in the highest mountains"
+		},
+		{
+			"id": "forbidden_apple",
+			"name": "Forbidden Apple",
+			"description": "The Forbidden fruit, from the first sin committed ever",
+			"data": {
+				"heal": 100
+			}
+		},
+		{
+			"id": "magic_root",
+			"name": "Magic Root",
+			"description": "The root of a tree that appears to be special"
+		},
+		{
+			"id": "tombstone_fragment",
+			"name": "Tombstone Fragment",
+			"description": "The fragment of a divin tombstone, from a human"
+		},
+		{
+			"id": "legendary_scarf",
+			"name": "Legendary Scarf",
+			"description": "The scarf from the most superior human",
+			"data": {
+				"armor": 10
+			}
+		},
+		{
+			"id": "golden_chalice",
+			"name": "Golden Chalice",
+			"description": "The shiniest chalice ever made, for the eyes of someone special",
+			"data": {
+				"heal": 70
+			}
+		},
+		{
+			"id": "medicinal_herbs",
+			"name": "Medicinal Herbs",
+			"description": "Herbs that allow your body to get some of its youth back",
+			"data": {
+				"heal": 15
+			}
+		},
+		{
+			"id": "iron_axe",
+			"name": "Iron Axe",
+			"description": "An axe that slice.",
+			"data": {
+				"damage": 40
+			}
+		},
+		{
+			"id": "chainmail",
+			"name": "Chainmail",
+			"description": "A chainmail that protects you",
+			"data": {
+				"armor": 20
+			}
+		},
+		{
+			"id": "rose",
+			"name": "Rose",
+			"description": "A rose that would look lovely in a bouquet"
+		}
+    ],
+
+
+
+    "npcs": [
+        {
+            "id": "welcomer",
+            "name": "Welcomer",
+            "description": "The first npc you will meet",
+            "data": {
+                "dialogues": ["Welcome stranger!", "Welcome to our world !"],
+				"quests": ["bring_coins"]
+            }
+        },
+		{
+			"id": "old_swordsman",
+			"name": "Old Man",
+			"description": "An old man who wish that he kept his youth",
+			"data": {
+				"dialogues": ["I miss my strength...", "I miss my power...", "I miss my memories..."],
+				"quests": ["old_man_sword"]
+			}
+		},
+		{
+			"id": "old_highker",
+			"name": "Old Man",
+			"description": "An old man who wish that he kept his youth",
+			"data": {
+				"dialogues": ["I miss my climbs...", "I miss the pinnacles...", "I miss my memories..."],
+				"quests": ["old_man_stone"]
+			}
+		},
+		{
+			"id": "old_gourmet",
+			"name": "Old Man",
+			"description": "An old man who wish that he kept his youth",
+			"data": {
+				"dialogues": ["I miss its taste...", "I miss its scent...", "I miss my memories..."],
+				"quests": ["old_man_fruit"]
+			}
+		},
+		{
+			"id": "old_explorer",
+			"name": "Old Man",
+			"description": "An old man who wish that he kept his youth",
+			"data": {
+				"dialogues": ["I miss my trees...", "I miss my plants...", "I miss my memories..."],
+				"quests": ["old_man_root"]
+			}
+		},
+		{
+			"id": "old_graveman",
+			"name": "Old Man",
+			"description": "An old man who wish that he kept his youth",
+			"data": {
+				"dialogues": ["I miss my people...", "I miss my family...", "I miss my memories..."],
+				"quests": ["old_man_tombstone"]
+			}
+		},
+		{
+			"id": "old_lofty",
+			"name": "Old Man",
+			"description": "An old man who wish that he kept his youth",
+			"data": {
+				"dialogues": ["I miss my outfits...", "I miss my clothes...", "I miss my memories..."],
+				"quests": ["old_man_scarf"]
+			}
+		},
+		{
+			"id": "old_priest",
+			"name": "Old Man",
+			"description": "An old man who wish that he kept his youth",
+			"data": {
+				"dialogues": ["I miss my jewelry...", "I miss my faith...", "I miss my memories..."],
+				"quests": ["old_man_chalice"]
+			}
+		},
+		{
+			"id": "old_woman",
+			"name": "Old Woman",
+			"description": "An old woman who used to know success with men",
+			"data": {
+				"dialogues": ["I used to be covered by gifts...",
+							  "I used to be covered by flowers...",
+							  "I would love a bouquet`..."],
+				"quests": ["the_bouquet"]
+			}
+		},
+		{
+			"id": "young_man",
+			"name": "Young Man",
+			"description": "A young man that beat your ass up",
+			"data": {
+				"attack": 20,
+				"hp": 125,
+				"armor":2
+			}
+		}
+    ],
+
+
+
+    "quests": [
+        {
+            "id": "bring_coins",
+            "name": "Bring coins",
+            "description": "Bring me 3 coins",
+            "thanks": "Thank you for those 3 coins, here is another one",
+            "task": {
+                "item": "coin",
+                "count": 3
+            },
+            "reward": [
+                "coin"
+            ]
+        },
+        {
+            "id": "old_man_sword",
+            "name": "The missed sword",
+            "description": "Bring me back my beloved sword !",
+            "thanks": "Ohh my dear... I missed you so much...",
+            "task": {
+                "item": "rusty_sword",
+                "count": 1
+            },
+            "reward": [
+				"rose",
+                "coin"
+            ]
+        },
+        {
+            "id": "old_man_stone",
+            "name": "The missed stone",
+            "description": "Bring me back a unique stone",
+            "thanks": "Ohh my lord... It's so gorgeous...",
+            "task": {
+                "item": "rare_stone",
+                "count": 1
+            },
+            "reward": [
+				"rose",
+                "coin"
+            ]
+        },
+        {
+            "id": "old_man_fruit",
+            "name": "The missed fruit",
+            "description": "Bring me back the forbidden fruit",
+            "thanks": "Ohh my god, what have you done...",
+            "task": {
+                "item": "forbidden_apple",
+                "count": 1
+            },
+            "reward": [
+				"rose",
+                "coin"
+            ]
+        },
+        {
+            "id": "old_man_scarf",
+            "name": "The missed scarf",
+            "description": "Bring me back the legendary scarf",
+            "thanks": "Ohh my lord... It's so soft...",
+            "task": {
+                "item": "legendary_scarf",
+                "count": 1
+            },
+            "reward": [
+				"rose",
+                "coin"
+            ]
+        },
+        {
+            "id": "old_man_root",
+            "name": "The missed root",
+            "description": "Bring me back a magic root",
+            "thanks": "Ohh my lord... It's so powerful...",
+            "task": {
+                "item": "magic_root",
+                "count": 1
+            },
+            "reward": [
+				"rose",
+                "coin"
+            ]
+        },
+        {
+            "id": "old_man_tombstone",
+            "name": "The missed tombstone",
+            "description": "Bring me back the tombstone fragment",
+            "thanks": "Ohh my lord... I can't believe it...",
+            "task": {
+                "item": "tombstone_fragment",
+                "count": 1
+            },
+            "reward": [
+				"rose",
+                "coin"
+            ]
+        },
+        {
+            "id": "old_man_chalice",
+            "name": "The missed chalice",
+            "description": "Bring me back the golden chalice",
+            "thanks": "Ohh my lord... It's so gorgeous...",
+            "task": {
+                "item": "golden_chalice",
+                "count": 1
+            },
+            "reward": [
+				"rose",
+                "coin"
+            ]
+        },
+        {
+            "id": "the_bouquet",
+            "name": "The bouquet",
+            "description": "Bring me back a lovely bouquet of roses",
+			"requirements": ["old_man_sword", "old_man_stone",
+							 "old_man_chalice", "old_man_fruit",
+							 "old_man_root", "old_man_scarf", "old_man_tombstone"],
+            "thanks": "I'm impressed by your devotion, but love is selfless...",
+            "task": {
+                "item": "rose",
+                "count": 7
+            },
+            "reward": [
+                "coin"
+            ]
+        }
+    ],
+
+
+
+    "spawns": [
+        {
+            "room": "start",
+            "item": "coin",
+            "count": 1
+        },
+        {
+            "room": "rampant_forest",
+            "item": "coin",
+            "count": 1
+        },
+        {
+            "room": "secondil",
+            "item": "coin",
+            "count": 1
+        },
+        {
+            "room": "diremarsh_waste",
+            "item": "coin",
+            "count": 1
+        },
+
+		{
+			"room": "rampant_forest",
+			"item": "medicinal_herbs",
+			"count": 2
+		},
+		{
+			"room": "lake_of_fortunes",
+			"item": "chainmail",
+			"count": 1
+		},
+		{
+			"room": "canyon_ancient_souls",
+			"item": "medicinal_herbs",
+			"count": 2
+		},
+		{
+			"room": "magnanimous_sanctuary",
+			"item": "medicinal_herbs",
+			"count": 2
+		},
+		{
+			"room": "magnanimous_sanctuary",
+			"item": "iron_axe",
+			"count": 1
+		},
+		{
+			"room": "lake_of_fortunes",
+			"npc": "young_man"
+		},
+		{
+			"room": "canyon_ancient_souls",
+			"npc": "young_man"
+		},
+
+        {
+            "room": "start",
+            "npc": "welcomer"
+        },
+		{
+            "room": "thirdrema",
+            "npc": "old_highker"
+        },
+        {
+            "room": "secondil",
+            "npc": "old_swordsman"
+        },
+		{
+			"room": "start",
+            "npc": "old_woman"
+		},
+		{
+			"room": "fourfolkshire",
+            "npc": "old_gourmet"
+		},
+		{
+			"room": "fivelle",
+            "npc": "old_lofty"
+		},
+		{
+			"room": "sixenveldt",
+            "npc": "old_priest"
+		},
+		{
+			"room": "eighthold",
+            "npc": "old_explorer"
+		},
+		{
+			"room": "neenesshill",
+            "npc": "old_graveman"
+		},
+
+        {
+            "room": "barren_darkruin",
+            "item": "rusty_sword",
+			"count": 1
+        },
+        {
+            "room": "magnanimous_sanctuary",
+            "item": "rare_stone",
+			"count": 1
+        },
+		{
+			"room": "prismatic_forest_grotto",
+			"item": "forbidden_apple",
+			"count": 1
+		},
+		{
+			"room": "rampant_forest",
+			"item": "magic_root",
+			"count": 1
+		},
+		{
+			"room": "iron_ruin_divinity",
+			"item": "golden_chalice",
+			"count": 1
+		},
+		{
+			"room": "diremarsh_waste",
+			"item": "tombstone_fragment",
+			"count": 1
+		},
+		{
+			"room": "ruins_past_glories",
+			"item": "legendary_scarf",
+			"count": 1
+		}
+    ]
+}
